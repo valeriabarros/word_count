@@ -7,10 +7,7 @@ var app = (function () {
   function countWords(event) {
     event.preventDefault();
     Countable.count(document.getElementById('words'), counter =>  {
-      Array.from(document.getElementsByClassName('number-of-words'))
-        .forEach(function (element) {
-          element.innerText = counter.words;
-        });
+      document.getElementById('numberWords').innerText = "Your text has " + counter.words + " words!";
     });
   }
 
