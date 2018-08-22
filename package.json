@@ -1,0 +1,24 @@
+{
+  "name": "wordcount",
+  "version": "1.0.0",
+  "description": "This is a demo project using node.js",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "demo",
+    "nodejs",
+    "wordcount"
+  ],
+  "author": "Valéria Barros",
+  "license": "MIT",
+  "dependencies": {
+    "countable": "3.0.1",
+    "express": "4.16.3"
+  }
+}
