@@ -3,14 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>SPA - Word Count Challenge!</title>
+  <title>Word Count Challenge!</title>
+  <link href="app.css" rel="stylesheet">
 </head>
 <body>
-  <form id="wordCount">
-    <textarea rows="5" required id="words"></textarea>
-    <h2 id="numberWords">Check how many words has your text!</h2>
-    <input type="submit">
-  </form>
+  <div class="word-count">
+    <div class="word-count__wrapper">
+      <h1>Word Count Challenge</h1>
+      <form class="word-count__form" id="word-count-form">
+        <textarea class="word-count__area" rows="5" required id="word-count-text"></textarea>
+        <h2 class="word-count__status" id="counter"></h2>
+        <input class="word-count__submit" type="submit">
+      </form>
+    </div>
+  </div>
   <script src="scripts/countable/Countable.min.js"></script>
   <script src="app.js"></script>
 </body>
